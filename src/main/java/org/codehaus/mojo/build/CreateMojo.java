@@ -727,7 +727,7 @@ public class CreateMojo
             	
             	return command.execute(repository.getProviderRepository(), 
             			new ScmFileSet( scmDirectory ), 
-            			new CommandParameters()).getCommandOutput().substring(0, 7);
+            			new CommandParameters()).getCommandOutput();
             	
  			} else throw new ScmException("No implementation for "+repository.getProvider());
         }
